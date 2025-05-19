@@ -1,18 +1,24 @@
-## Getting Started
+🐦 Flappy Bird Game
+A C++ implementation of the classic Flappy Bird game using the SFML (Simple and Fast Multimedia Library). Navigate the bird through a series of pipes without hitting them and aim for the highest score!
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+🎮 Gameplay
 
-## Folder Structure
+Objective: Keep the bird flying by navigating through gaps between pipes.
 
-The workspace contains two folders by default, where:
+Controls: Press the Spacebar to make the bird flap its wings and ascend.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Scoring: Earn points by successfully passing through each set of pipes.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Game Over: The game ends if the bird collides with a pipe or the ground.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+🛠️ Features
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Smooth animations and responsive controls.
+
+Dynamic pipe generation for an engaging challenge.
+
+Score tracking to monitor your progress.
+
+Game over screen with the option to restart.
+
