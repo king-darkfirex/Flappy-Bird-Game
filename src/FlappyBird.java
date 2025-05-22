@@ -135,14 +135,25 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
         //score
         g.setColor(Color.white);
 
-        g.setFont(new Font("Arial", Font.PLAIN, 32));
-        if (gameOver) {
-            g.drawString("Game Over: " + String.valueOf((int) score), 10, 35);
+        Font font = new Font("Segoe UI Emoji", Font.PLAIN, 30);
+        g.setFont(font);
+
+        if(gameOver){
+            Font gameOverFont = new Font("Segoe UI Emoji", Font.PLAIN, 60);
+            g.setFont(gameOverFont);
+            FontMetrics metrics = g.getFontMetrics(gameOverFont);
+            int x = (getWidth() - metrics.stringWidth("Game Over")) / 2;
+            int y = (getHeight() - metrics.getHeight()) / 2 + metrics.getAscent();
+
+            g.drawString("Game Over", x, y);
         }
-        else {
-            g.drawString(String.valueOf((int) score), 10, 35);
-            g.drawString(String.valueOf((int) highScore), 35, 35);
-        }
+        
+        else{
+            g.drawString("🏆", 5, 35);
+            g.drawString("🐤", 5, 75);
+            g.drawString(String.valueOf((int) score), 55, 75);
+            g.drawString(String.valueOf((int) highScore), 55, 35);
+        }   
         
 	}
 

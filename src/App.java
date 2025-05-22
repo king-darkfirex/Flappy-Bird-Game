@@ -15,6 +15,12 @@ public class App {
         frame.add(flappyBird);
         frame.pack();
         flappyBird.requestFocus();
+
+        // StartMenu menu = new StartMenu();
+        // frame.add(menu);
+        // frame.pack();
+        // menu.requestFocus();
+
         frame.setVisible(true);
     }
 }
