@@ -11,15 +11,15 @@ public class App {
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        FlappyBird flappyBird = new FlappyBird();
-        frame.add(flappyBird);
-        frame.pack();
-        flappyBird.requestFocus();
-
-        // StartMenu menu = new StartMenu();
-        // frame.add(menu);
+        // FlappyBird flappyBird = new FlappyBird();
+        // frame.add(flappyBird);
         // frame.pack();
-        // menu.requestFocus();
+        // flappyBird.requestFocus();
+
+        StartMenu menu = new StartMenu(frame);
+        frame.add(menu);
+        frame.pack();
+        menu.requestFocus();
 
         frame.setVisible(true);
     }
