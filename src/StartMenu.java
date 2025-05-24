@@ -1,8 +1,5 @@
 import java.awt.*;
 import java.awt.event.*;
-import java.nio.channels.Pipe;
-import java.util.ArrayList;
-import java.util.Random;
 import javax.swing.*;
 
 public class StartMenu extends JPanel implements ActionListener, KeyListener {
